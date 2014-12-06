@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Second-->
+        <!--SECOND-->
         <scene sceneID="4rQ-yY-rzy">
             <objects>
                 <tableViewController id="3X7-M1-mxc" sceneMemberID="viewController">
@@ -25,17 +25,17 @@
                             <outlet property="delegate" destination="3X7-M1-mxc" id="dMX-ja-7Yo"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Second" id="H3H-Rw-3qN"/>
+                    <navigationItem key="navigationItem" title="SECOND" id="H3H-Rw-3qN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XKK-fh-3rm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="429" y="407"/>
         </scene>
-        <!--Second-->
+        <!--nav-->
         <scene sceneID="LxN-Te-rap">
             <objects>
-                <navigationController id="4yx-XK-KO3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="GxY-IZ-eKt"/>
+                <navigationController title="nav" id="4yx-XK-KO3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="EBT-Va-TBx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rR8-Rx-XVc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
