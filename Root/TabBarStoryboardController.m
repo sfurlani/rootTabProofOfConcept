@@ -21,10 +21,12 @@
     
     NSMutableArray *hotswap = [self.viewControllers mutableCopy];
     [self.viewControllers enumerateObjectsUsingBlock:^(UIViewController *viewController, NSUInteger idx, BOOL *stop) {
-        if ([viewController isKindOfClass:[StoryboardController class]])
+        if ([viewController conformsToProtocol:@protocol(DefinesTabBarStoryboardFilename)] &&
+            [viewController respondsToSelector:@selector(storyboardFilename)] &&
+            [(id)viewController storyboardFilename])
         {
-            StoryboardController *sbvc = (StoryboardController*)viewController;
-            UIStoryboard *board = [UIStoryboard storyboardWithName:sbvc.storyboardFilename bundle:nil];
+            NSString *filename = [(id<TabBarStoryboardControllerDelegate>)viewController storyboardFilename];
+            UIStoryboard *board = [UIStoryboard storyboardWithName:filename bundle:nil];
             UIViewController *initial = [board instantiateInitialViewController];
             if (initial)
             {
@@ -35,9 +37,5 @@
     self.viewControllers = hotswap;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

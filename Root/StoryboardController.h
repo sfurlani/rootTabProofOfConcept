@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TabBarStoryboardController.h"
 
-@interface StoryboardController : UIViewController
+@class StoryboardPreview;
 
-@property (nonatomic, strong) IBInspectable NSString *storyboardFilename;
+@interface StoryboardController : UIViewController <DefinesTabBarStoryboardFilename>
+
+@property (strong, nonatomic)  IBInspectable NSString *storyboardFilename;
 
 @end

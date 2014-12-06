@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol DefinesTabBarStoryboardFilename <NSObject>
+
+- (NSString*) storyboardFilename;
+
+@end
+
 @interface TabBarStoryboardController : UITabBarController
 
 @end
+
+

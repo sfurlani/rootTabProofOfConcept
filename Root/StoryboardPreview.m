@@ -15,21 +15,17 @@
 - (void)drawRect:(CGRect)rect {
     // Drawing code
     
-    NSString *description = @"Be sure to add the storyboard filename to the View Controller";
-    if (self.storyboardFilename)
-    {
-        description = [NSString stringWithFormat:@"This loads Storyboard: %@", self.storyboardFilename];
-    }
+    NSString *description = (self.storyboardFilename ?
+                             [NSString stringWithFormat:@"This loads Storyboard: %@", self.storyboardFilename] :
+                             @"Be sure to add the storyboard filename to the View Controller");
     
-    static NSDictionary *attributes;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        NSMutableParagraphStyle *style = [NSMutableParagraphStyle new];
-        style.alignment = NSTextAlignmentCenter;
-        UIFont *font = [UIFont boldSystemFontOfSize:50.0f];
-        attributes = @{NSParagraphStyleAttributeName:style,
-                       NSFontAttributeName:font};
-    });
+    NSMutableParagraphStyle *style = [NSMutableParagraphStyle new];
+    style.alignment = NSTextAlignmentCenter;
+    UIFont *font = [UIFont boldSystemFontOfSize:50.0f];
+    UIColor *color = self.storyboardFilename ? [UIColor blackColor] : [UIColor redColor];
+    NSDictionary *attributes = @{NSParagraphStyleAttributeName:style,
+                                 NSFontAttributeName:font,
+                                 NSForegroundColorAttributeName:color};
     
     [description drawInRect:rect withAttributes:attributes];
     
