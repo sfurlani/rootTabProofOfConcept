@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		754F7C091A33A04D00E8108A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F7C081A33A04D00E8108A /* main.m */; };
 		754F7C0C1A33A04D00E8108A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F7C0B1A33A04D00E8108A /* AppDelegate.m */; };
-		754F7C0F1A33A04D00E8108A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F7C0E1A33A04D00E8108A /* FirstViewController.m */; };
-		754F7C121A33A04D00E8108A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F7C111A33A04D00E8108A /* SecondViewController.m */; };
-		754F7C151A33A04D00E8108A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754F7C131A33A04D00E8108A /* Main.storyboard */; };
 		754F7C171A33A04D00E8108A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754F7C161A33A04D00E8108A /* Images.xcassets */; };
 		754F7C1A1A33A04D00E8108A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754F7C181A33A04D00E8108A /* LaunchScreen.xib */; };
 		754F7C261A33A04D00E8108A /* RootTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F7C251A33A04D00E8108A /* RootTests.m */; };
+		754F7C331A33A48C00E8108A /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754F7C321A33A48C00E8108A /* First.storyboard */; };
+		754F7C351A33A52000E8108A /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754F7C341A33A52000E8108A /* Second.storyboard */; };
+		754F7C381A33AAD700E8108A /* UIStoryboard+Tabbed.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F7C371A33AAD700E8108A /* UIStoryboard+Tabbed.m */; };
+		754F7C3B1A33AC8700E8108A /* UITabBarController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F7C3A1A33AC8700E8108A /* UITabBarController+Storyboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +34,17 @@
 		754F7C081A33A04D00E8108A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		754F7C0A1A33A04D00E8108A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		754F7C0B1A33A04D00E8108A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		754F7C0D1A33A04D00E8108A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		754F7C0E1A33A04D00E8108A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		754F7C101A33A04D00E8108A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		754F7C111A33A04D00E8108A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		754F7C141A33A04D00E8108A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		754F7C161A33A04D00E8108A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		754F7C191A33A04D00E8108A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		754F7C1F1A33A04D00E8108A /* RootTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RootTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		754F7C241A33A04D00E8108A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		754F7C251A33A04D00E8108A /* RootTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootTests.m; sourceTree = "<group>"; };
+		754F7C321A33A48C00E8108A /* First.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
+		754F7C341A33A52000E8108A /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		754F7C361A33AAD700E8108A /* UIStoryboard+Tabbed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Tabbed.h"; sourceTree = "<group>"; };
+		754F7C371A33AAD700E8108A /* UIStoryboard+Tabbed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Tabbed.m"; sourceTree = "<group>"; };
+		754F7C391A33AC8700E8108A /* UITabBarController+Storyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Storyboard.h"; sourceTree = "<group>"; };
+		754F7C3A1A33AC8700E8108A /* UITabBarController+Storyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Storyboard.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,16 +86,17 @@
 		754F7C051A33A04D00E8108A /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				754F7C061A33A04D00E8108A /* Supporting Files */,
 				754F7C0A1A33A04D00E8108A /* AppDelegate.h */,
 				754F7C0B1A33A04D00E8108A /* AppDelegate.m */,
-				754F7C0D1A33A04D00E8108A /* FirstViewController.h */,
-				754F7C0E1A33A04D00E8108A /* FirstViewController.m */,
-				754F7C101A33A04D00E8108A /* SecondViewController.h */,
-				754F7C111A33A04D00E8108A /* SecondViewController.m */,
-				754F7C131A33A04D00E8108A /* Main.storyboard */,
+				754F7C321A33A48C00E8108A /* First.storyboard */,
+				754F7C341A33A52000E8108A /* Second.storyboard */,
 				754F7C161A33A04D00E8108A /* Images.xcassets */,
 				754F7C181A33A04D00E8108A /* LaunchScreen.xib */,
-				754F7C061A33A04D00E8108A /* Supporting Files */,
+				754F7C361A33AAD700E8108A /* UIStoryboard+Tabbed.h */,
+				754F7C371A33AAD700E8108A /* UIStoryboard+Tabbed.m */,
+				754F7C391A33AC8700E8108A /* UITabBarController+Storyboard.h */,
+				754F7C3A1A33AC8700E8108A /* UITabBarController+Storyboard.m */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -204,9 +207,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754F7C151A33A04D00E8108A /* Main.storyboard in Resources */,
 				754F7C1A1A33A04D00E8108A /* LaunchScreen.xib in Resources */,
 				754F7C171A33A04D00E8108A /* Images.xcassets in Resources */,
+				754F7C351A33A52000E8108A /* Second.storyboard in Resources */,
+				754F7C331A33A48C00E8108A /* First.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,9 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754F7C121A33A04D00E8108A /* SecondViewController.m in Sources */,
+				754F7C3B1A33AC8700E8108A /* UITabBarController+Storyboard.m in Sources */,
+				754F7C381A33AAD700E8108A /* UIStoryboard+Tabbed.m in Sources */,
 				754F7C0C1A33A04D00E8108A /* AppDelegate.m in Sources */,
-				754F7C0F1A33A04D00E8108A /* FirstViewController.m in Sources */,
 				754F7C091A33A04D00E8108A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,14 +254,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		754F7C131A33A04D00E8108A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				754F7C141A33A04D00E8108A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		754F7C181A33A04D00E8108A /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
