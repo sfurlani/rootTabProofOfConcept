@@ -25,7 +25,7 @@
             [viewController respondsToSelector:@selector(storyboardFilename)] &&
             [(id)viewController storyboardFilename])
         {
-            NSString *filename = [(id<TabBarStoryboardControllerDelegate>)viewController storyboardFilename];
+            NSString *filename = [(id<DefinesTabBarStoryboardFilename>)viewController storyboardFilename];
             UIStoryboard *board = [UIStoryboard storyboardWithName:filename bundle:nil];
             UIViewController *initial = [board instantiateInitialViewController];
             if (initial)
