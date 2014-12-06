@@ -14,8 +14,10 @@
 		754F7C261A33A04D00E8108A /* RootTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F7C251A33A04D00E8108A /* RootTests.m */; };
 		754F7C331A33A48C00E8108A /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754F7C321A33A48C00E8108A /* First.storyboard */; };
 		754F7C351A33A52000E8108A /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754F7C341A33A52000E8108A /* Second.storyboard */; };
-		754F7C381A33AAD700E8108A /* UIStoryboard+Tabbed.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F7C371A33AAD700E8108A /* UIStoryboard+Tabbed.m */; };
-		754F7C3B1A33AC8700E8108A /* UITabBarController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F7C3A1A33AC8700E8108A /* UITabBarController+Storyboard.m */; };
+		754F7C401A33B0B200E8108A /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754F7C3F1A33B0B200E8108A /* Root.storyboard */; };
+		754F7C441A33B26A00E8108A /* TabBarStoryboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F7C431A33B26A00E8108A /* TabBarStoryboardController.m */; };
+		754F7C471A33B28C00E8108A /* StoryboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F7C461A33B28C00E8108A /* StoryboardController.m */; };
+		754F7C4A1A33B6A000E8108A /* StoryboardPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 754F7C491A33B6A000E8108A /* StoryboardPreview.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +43,13 @@
 		754F7C251A33A04D00E8108A /* RootTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootTests.m; sourceTree = "<group>"; };
 		754F7C321A33A48C00E8108A /* First.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
 		754F7C341A33A52000E8108A /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
-		754F7C361A33AAD700E8108A /* UIStoryboard+Tabbed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Tabbed.h"; sourceTree = "<group>"; };
-		754F7C371A33AAD700E8108A /* UIStoryboard+Tabbed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Tabbed.m"; sourceTree = "<group>"; };
-		754F7C391A33AC8700E8108A /* UITabBarController+Storyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Storyboard.h"; sourceTree = "<group>"; };
-		754F7C3A1A33AC8700E8108A /* UITabBarController+Storyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Storyboard.m"; sourceTree = "<group>"; };
+		754F7C3F1A33B0B200E8108A /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
+		754F7C421A33B26A00E8108A /* TabBarStoryboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarStoryboardController.h; sourceTree = "<group>"; };
+		754F7C431A33B26A00E8108A /* TabBarStoryboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarStoryboardController.m; sourceTree = "<group>"; };
+		754F7C451A33B28C00E8108A /* StoryboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardController.h; sourceTree = "<group>"; };
+		754F7C461A33B28C00E8108A /* StoryboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardController.m; sourceTree = "<group>"; };
+		754F7C481A33B6A000E8108A /* StoryboardPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardPreview.h; sourceTree = "<group>"; };
+		754F7C491A33B6A000E8108A /* StoryboardPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardPreview.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				754F7C051A33A04D00E8108A /* Root */,
+				754F7C061A33A04D00E8108A /* Supporting Files */,
 				754F7C221A33A04D00E8108A /* RootTests */,
 				754F7C041A33A04D00E8108A /* Products */,
 			);
@@ -86,17 +92,18 @@
 		754F7C051A33A04D00E8108A /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				754F7C061A33A04D00E8108A /* Supporting Files */,
+				754F7C411A33B1F200E8108A /* Resources */,
 				754F7C0A1A33A04D00E8108A /* AppDelegate.h */,
 				754F7C0B1A33A04D00E8108A /* AppDelegate.m */,
+				754F7C3F1A33B0B200E8108A /* Root.storyboard */,
 				754F7C321A33A48C00E8108A /* First.storyboard */,
 				754F7C341A33A52000E8108A /* Second.storyboard */,
-				754F7C161A33A04D00E8108A /* Images.xcassets */,
-				754F7C181A33A04D00E8108A /* LaunchScreen.xib */,
-				754F7C361A33AAD700E8108A /* UIStoryboard+Tabbed.h */,
-				754F7C371A33AAD700E8108A /* UIStoryboard+Tabbed.m */,
-				754F7C391A33AC8700E8108A /* UITabBarController+Storyboard.h */,
-				754F7C3A1A33AC8700E8108A /* UITabBarController+Storyboard.m */,
+				754F7C421A33B26A00E8108A /* TabBarStoryboardController.h */,
+				754F7C431A33B26A00E8108A /* TabBarStoryboardController.m */,
+				754F7C451A33B28C00E8108A /* StoryboardController.h */,
+				754F7C461A33B28C00E8108A /* StoryboardController.m */,
+				754F7C481A33B6A000E8108A /* StoryboardPreview.h */,
+				754F7C491A33B6A000E8108A /* StoryboardPreview.m */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -108,6 +115,7 @@
 				754F7C081A33A04D00E8108A /* main.m */,
 			);
 			name = "Supporting Files";
+			path = Root;
 			sourceTree = "<group>";
 		};
 		754F7C221A33A04D00E8108A /* RootTests */ = {
@@ -125,6 +133,15 @@
 				754F7C241A33A04D00E8108A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		754F7C411A33B1F200E8108A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				754F7C161A33A04D00E8108A /* Images.xcassets */,
+				754F7C181A33A04D00E8108A /* LaunchScreen.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754F7C401A33B0B200E8108A /* Root.storyboard in Resources */,
 				754F7C1A1A33A04D00E8108A /* LaunchScreen.xib in Resources */,
 				754F7C171A33A04D00E8108A /* Images.xcassets in Resources */,
 				754F7C351A33A52000E8108A /* Second.storyboard in Resources */,
@@ -228,10 +246,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754F7C3B1A33AC8700E8108A /* UITabBarController+Storyboard.m in Sources */,
-				754F7C381A33AAD700E8108A /* UIStoryboard+Tabbed.m in Sources */,
+				754F7C441A33B26A00E8108A /* TabBarStoryboardController.m in Sources */,
 				754F7C0C1A33A04D00E8108A /* AppDelegate.m in Sources */,
+				754F7C471A33B28C00E8108A /* StoryboardController.m in Sources */,
 				754F7C091A33A04D00E8108A /* main.m in Sources */,
+				754F7C4A1A33B6A000E8108A /* StoryboardPreview.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
